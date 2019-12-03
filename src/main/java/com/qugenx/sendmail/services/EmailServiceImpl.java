@@ -21,7 +21,7 @@ import javax.mail.internet.MimeMessage;
 import java.lang.invoke.MethodHandles;
 
 @Service("emailService")
-@Profile("dev")
+@Profile({"dev", "qa"})
 public class EmailServiceImpl implements EmailService {
 
     private final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
